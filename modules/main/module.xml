@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://jelix.org/ns/module/1.0">
+    <info id="main@yourproject.undefined" name="main" createdate="2015-03-04">
+        <version date="2015-03-04">0.1pre</version>
+        <label lang="en_US">main</label>
+        <description lang="en_US" />
+        <license URL="">MIT license. See LICENSE file</license>
+        <copyright></copyright>
+        <creator name="your name" email=""/>
+        <!--<contributor name="hisname" email="hisemail@yoursite.undefined"/>-->
+        <homepageURL></homepageURL>
+    </info>
+    <dependencies>
+        <jelix minversion="1.7.0pre.0" maxversion="1.7.*"/>
+    </dependencies>
+</module>
