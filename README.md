@@ -17,49 +17,63 @@ sudo mv composer.phar /usr/local/bin/composer
 Then create your project, let's say 'myapp', using the source code of jelix-skeleton-app:
 
 ```bash
-composer create-project --repository-url=http://package.jelix.org jelix/jelix-skeleton-app myapp
+composer create-project jelix/jelix-skeleton-app myapp
 ```
 
-Then you should install the application
+And go into the newly created folder for next commands
 
 ```bash
 cd myapp/
+```
+
+The next thing to do is to "install" the application:
+
+```bash
+# copy the file where 
 cp var/config/profiles.ini.php.dist var/config/profiles.ini.php
+
+# an empty file to indicate local configuration values
 cp var/config/localconfig.ini.php.dist var/config/localconfig.ini.php
+
+# run the Jelix installer
 php install/installer.php
 ```
 
-Create a link to the jelix-www of jelix:
+Create a link to the jelix-www of jelix. Jelix-www contains web resources for some
+Jelix components:
 
 ```bash
-cd myapp/
 ln -s ../vendor/jelix/jelix/lib/jelix-www www/jelix
 ```
 
 or copy the directory
 ```bash
-cd myapp/
 cp -a ../vendor/jelix/jelix/lib/jelix-www www/jelix
 ```
 
 Then you can launch the Php web server
 
 ```
-cd myapp/
 php -S localhost:8080 -t www 
 ```
 
 And see your first page in your browser at the URL: http://localhost:8080.
 
-You are ready to develop your modules ;-)
+You are ready to develop your application and modules ;-)
 
-## name & license changes
+Note: use the PHP web server only for development. Use production ready web server like
+Apache or Nginx to run the application for production.
+
+## name & informations
 
 In some comments header and other files, there is the name of the application "jelix-skeleton-app".
-You should probably change it.
+You should probably change it. You should also probably want to change informations
+into the .jelix-scripts.ini file and in the composer.json file.
 
-And it is recommended to choose a license ;-)
+## licence and copyright
 
+The source code files are not released under a licence. So you have to choose a licence
+and you should update the LICENSE file, the composer file and all comments header of other files. You shou
 
 ## installation without Composer
 

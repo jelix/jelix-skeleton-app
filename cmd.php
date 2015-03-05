@@ -1,8 +1,6 @@
 <?php
 /**
-* @package  jelix
 * @author   Laurent Jouanneau
-* @contributor
 * @copyright 2015 Laurent Jouanneau
 * @link     http://jelix.org
 * @licence  MIT license

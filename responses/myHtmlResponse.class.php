@@ -1,12 +1,10 @@
 <?php
 /**
-* @package   jelix-skeleton-app
+* @package
 * @author    
 * @copyright 
 * @license    See LICENSE file
 */
-
-
 require_once (JELIX_LIB_CORE_PATH.'response/jResponseHtml.class.php');
 
 class myHtmlResponse extends jResponseHtml {

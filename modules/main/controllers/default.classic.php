@@ -1,9 +1,8 @@
 <?php
 /**
-* @package   jelix-skeleton-app
+* @package
 * @author    
 * @copyright 
-* @link      
 * @license    See LICENSE file
 */
 

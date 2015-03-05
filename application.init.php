@@ -1,11 +1,10 @@
 <?php
 /**
-* @package   jelix-skeleton-app
-* @author    
-* @copyright 
-* @license    See LICENSE file
+* @author   Laurent Jouanneau
+* @copyright 2015 Laurent Jouanneau
+* @link     http://jelix.org
+* @licence  MIT license
 */
-
 require (__DIR__.'/vendor/autoload.php');
 
 jApp::initPaths(
