@@ -17,7 +17,7 @@ sudo mv composer.phar /usr/local/bin/composer
 Then create your project, let's say 'myapp', using the source code of jelix-skeleton-app:
 
 ```bash
-composer create-project jelix/jelix-skeleton-app myapp
+composer create-project jelix/jelix-skeleton-app myapp dev-jelix-1.7
 ```
 
 And go into the newly created folder for next commands
