@@ -2,7 +2,8 @@
 
 Application skeleton to start a new project with the Jelix framework.
 
-Only for Jelix 1.7+. (not released yet).
+Only for the Jelix master branch (unstable).
+For stable version of jelix, see other branches of the jelix-skeleton-app git repository.
 
 ## Installation
 
@@ -17,7 +18,7 @@ sudo mv composer.phar /usr/local/bin/composer
 Then create your project, let's say 'myapp', using the source code of jelix-skeleton-app:
 
 ```bash
-composer create-project jelix/jelix-skeleton-app myapp
+composer create-project jelix/jelix-skeleton-app myapp dev-master
 ```
 
 And go into the newly created folder for next commands
