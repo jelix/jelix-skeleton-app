@@ -26,7 +26,7 @@ And go into the newly created folder for next commands
 cd myapp/
 ```
 
-The next thing to do is to "install" the application:
+The next thing to do is to setup the application:
 
 ```bash
 # copy the file where 
@@ -68,7 +68,7 @@ Apache or Nginx to run the application for production.
 
 In some comments header and other files, there is the name of the application "jelix-skeleton-app".
 You should probably change it. You should also probably want to change informations
-into the .jelix-scripts.ini file and in the composer.json file.
+into the .jelix-scripts.ini file, in the composer.json file and in the project.xml file.
 
 ## licence and copyright
 

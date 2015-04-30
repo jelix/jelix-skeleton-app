@@ -14,5 +14,11 @@
     },
     "autoload": {
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra" : {
+        "jelix": {
+            "modules-dir": ["modules/"],
+            "plugins-dir": ["plugins/"]
+        }
+    }
 }
