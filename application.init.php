@@ -16,3 +16,8 @@ jApp::initPaths(
     __DIR__.'/scripts/'
 );
 jApp::setTempBasePath(__DIR__.'/temp/');
+
+/* if you don't use composer, uncomment these lines
+jApp::declareModulesDir(__DIR__.'/modules');
+jApp::declarePluginsDir(__DIR__.'/plugins');
+*/
