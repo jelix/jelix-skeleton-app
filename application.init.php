@@ -1,7 +1,7 @@
 <?php
 /**
 * @author   Laurent Jouanneau
-* @copyright 2015 Laurent Jouanneau
+* @copyright 2015-2016 Laurent Jouanneau
 * @link     http://jelix.org
 * @licence  MIT license
 */
@@ -17,7 +17,9 @@ jApp::initPaths(
 );
 jApp::setTempBasePath(__DIR__.'/temp/');
 
-/* if you don't use composer, uncomment these lines
+require (__DIR__.'/vendor/jelix_app_path.php');
+
+/* if you don't use composer to indicate modules directories, uncomment these lines
 jApp::declareModulesDir(__DIR__.'/modules');
 jApp::declarePluginsDir(__DIR__.'/plugins');
 */
