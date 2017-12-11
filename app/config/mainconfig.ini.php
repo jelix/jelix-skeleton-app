@@ -22,7 +22,6 @@ domainName=
 ; 1 if accessible by other modules (other modules can use it, but it is not accessible directly through the web)
 ; 2 if public (accessible through the web)
 
-jelix.access=2
 main.access=2
 
 [coordplugins]

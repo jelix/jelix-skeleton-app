@@ -74,10 +74,10 @@ into the .jelix-scripts.ini file, in the composer.json file and in the project.x
 ## licence and copyright
 
 The source code files are not released under a licence. So you have to choose a licence
-and you should update the LICENSE file, the composer file and all comments header of other files. You shou
+and you should update the LICENSE file, the composer file and all comments header of other files.
 
 ## installation without Composer
 
 Retrieve [the Jelix archive](http://jelix.org/articles/en/download/stable). You'll
-find a createapp.php script in it which creates from scratch the skeleton app.
+find a create-jelix-app.php script in it which creates from scratch the skeleton app.
 See [the documentation](http://docs.jelix.org/en/manual-1.7/create-application).
