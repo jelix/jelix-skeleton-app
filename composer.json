@@ -10,7 +10,7 @@
         "jelix/jelix": "dev-jelix-1.7.x"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.8.*"
+        "phpunit/phpunit": "5.7.*"
     },
     "autoload": {
     },
