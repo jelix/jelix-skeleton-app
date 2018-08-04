@@ -10,7 +10,7 @@
         <homepageURL></homepageURL>
     </info>
     <dependencies>
-        <jelix minversion="1.7.0-beta.3" maxversion="1.7.*" />
+        <jelix minversion="1.7.0-beta.3" maxversion="2.0.*" />
     </dependencies>
     <entrypoints>
         <!-- file: the path to the entry point relative to the base path
