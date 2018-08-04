@@ -9,11 +9,12 @@
 */
 
 
-class mainModuleInstaller extends jInstallerModule {
+class mainModuleInstaller extends jInstallerModule2 {
 
-    function install() {
+    function installEntrypoint(jInstallerEntryPoint2 $entryPoint) {
+
         //if ($this->firstDbExec())
-        //    $this->execSQLScript('sql/install');
+        //    $this->entryPoint->execSQLScript('sql/install');
 
         /*if ($this->firstExec('acl2')) {
             jAcl2DbManager::addSubject('my.subject', 'main~acl.my.subject', 'subject.group.id');

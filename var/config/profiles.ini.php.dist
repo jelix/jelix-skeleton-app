@@ -72,6 +72,29 @@ host = "localhost:11211"
 ;driver = 
 
 
+;----------------- jMailer
+[smtp]
+
+[smtp:mailer]
+
+; SMTP hosts.  All hosts must be separated by a semicolon : "smtp1.example.com:25;smtp2.example.com"
+host=localhost
+; default SMTP server port
+port=25
+; secured connection or not. possible values: "", "ssl", "tls"
+secure_protocol=
+; SMTP HELO of the message (Default is hostname)
+helo=
+; SMTP authentication
+auth_enabled=off
+username=
+password=
+; SMTP server timeout in seconds
+timeout=10
+
+
+
+
 ;----------------- jSoapClient
 [jsoapclient]
 

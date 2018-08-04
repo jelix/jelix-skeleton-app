@@ -14,7 +14,8 @@ class myHtmlResponse extends jResponseHtml {
     function __construct() {
         parent::__construct();
 
-        // Include your common CSS and JS files here
+        // declare here web links to your common CSS and JS files here
+        // or common web assets groups
     }
 
     protected function doAfterActions() {

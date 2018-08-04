@@ -2,26 +2,44 @@
 ;for security reasons , don't remove or modify the first line
 ;this file doesn't list all possible properties. See lib/jelix/core/defaultconfig.ini.php for that
 
+; the default locale used in the application
 locale=en_US
+
+; the locales available in the application
 availableLocales=en_US
+
+; the locale to fallback when the asked string doesn't exist in the current locale
+fallbackLocale=en_US
+
+; the charset used in the application
 charset=UTF-8
 
-; see http://www.php.net/manual/en/timezones.php for supported values
-timeZone="Europe/Paris"
-
+; the default theme
 theme=default
+
+; see http://www.php.net/manual/en/timezones.php for supported values
+timeZone=
 
 ; default domain name to use with jfullurl for example.
 ; Let it empty to use $_SERVER['SERVER_NAME'] value instead.
 domainName=
 
+; indicate HTTP(s) port if it should be forced to a specific value that PHP cannot
+; guess (if the application is behind a proxy on a specific port for example)
+; true for default port, or a number for a specific port. leave empty to use the
+; current server port.
+forceHTTPPort=
+forceHTTPSPort=
+
+; chmod for files created by Jelix
+chmodFile=0664
+chmodDir=0775
 
 [modules]
 ; modulename.access = x where x =
-; 0 if installed but not used (database schema is ok for example)
+; 0 if not used
 ; 1 if accessible by other modules (other modules can use it, but it is not accessible directly through the web)
 ; 2 if public (accessible through the web)
-
 main.access=2
 
 [coordplugins]
@@ -29,16 +47,18 @@ main.access=2
 
 [tplplugins]
 defaultJformsBuilder=html
+defaultJformsErrorDecorator=
 
 [responses]
 html=myHtmlResponse
 
 [error_handling]
 ;errorMessage="A technical error has occured (code: %code%). Sorry for this inconvenience."
+;sensitiveParameters = "password,passwd,pwd"
 
-;[compilation]
-;checkCacheFiletime  = on
-;force  = off
+[compilation]
+;checkCacheFiletime=on
+;force=off
 
 [urlengine]
 
@@ -46,15 +66,12 @@ html=myHtmlResponse
 ; because the jelix-www directory is outside the yourapp/www/ directory, you should create a link to
 ; jelix-www, or copy its content in yourapp/www/ (with a name like 'jelix' for example)
 ; so you should indicate the relative path of this link/directory to the basePath, or an absolute path.
-; if you change it, you probably want to change path in datepickers, wikieditors and htmleditors sections
+; if you change it, change also all pathes in [htmleditors]
+; at runtime, it contains the absolute path (basePath+the value) if you give a relative path
 jelixWWWPath="jelix/"
-jqueryPath="jelix/jquery/"
 
-; enable the parsing of the url. Set it to off if the url is already parsed by another program
-; (like mod_rewrite in apache), if the rewrite of the url corresponds to a simple url, and if
-; you use the significant engine. If you use the simple url engine, you can set to off.
-enableParser=on
-
+; if multiview is activated in apache, eg, you don't have to indicate the ".php" suffix
+; then set this parameter to on
 multiview=off
 
 ; basePath corresponds to the path to the base directory of your application.
@@ -67,14 +84,13 @@ multiview=off
 ; : basePath="/aaa/" )
 basePath=
 
+; backendBasePath is used when the application is behind a proxy, and when the base path on the frontend
+; server doesn't correspond to the base path on the backend server.
+; you MUST define basePath when you define backendBasePath
+backendBasePath=
+
 ; action to show the 'page not found' error
 notfoundAct="jelix~error:notfound"
-
-[jResponseHtml]
-; list of active plugins for jResponseHtml
-; remove the debugbar plugin on production server, and in this case don't forget
-; to remove the memory logger from the logger section
-plugins=debugbar
 
 [logger]
 ; list of loggers for each categories of log messages
@@ -118,22 +134,9 @@ sendmailPath="/usr/sbin/sendmail"
 ; this should be the directory in the var/ directory, where to store mail as files
 filesDir="mails/"
 
-; if mailer = smtp , fill the following parameters
-
-; SMTP hosts.  All hosts must be separated by a semicolon : "smtp1.example.com:25;smtp2.example.com"
-smtpHost=localhost
-; default SMTP server port
-smtpPort=25
-; secured connection or not. possible values: "", "ssl", "tls"
-smtpSecure=
-; SMTP HELO of the message (Default is hostname)
-smtpHelo=
-; SMTP authentication
-smtpAuth=off
-smtpUsername=
-smtpPassword=
-; SMTP server timeout in seconds
-smtpTimeout=10
+; if mailer = smtp , this option indicate the profile in profiles.ini.php
+; containing smtp parameters
+smtpProfile=mailer
 
 [acl2]
 ; example of driver: "db"
@@ -167,7 +170,17 @@ name=
 ;controls.datetime.months.labels = "names"
 ; define the default config for datepickers in jforms
 ;datepicker = default
+; default captcha type, you can set it with "recaptcha" too
+;captcha = simple
+
 
 [datepickers]
 ;default = jelix/js/jforms/datepickers/default/init.js
 
+[recaptcha]
+; see https://developers.google.com/recaptcha/docs/display to know the meaning
+; of these configuration parameters.
+theme=
+type=
+size=
+tabindex=
