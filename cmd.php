@@ -1,9 +1,19 @@
 <?php
 /**
 * @author   Laurent Jouanneau
-* @copyright 2015 Laurent Jouanneau
+* @copyright 2015-2018 Laurent Jouanneau
 * @link     http://jelix.org
 * @licence  MIT license
 */
+use Jelix\DevHelper\JelixCommands;
+
 require (__DIR__.'/application.init.php');
-require(LIB_PATH.'jelix-scripts/includes/cmd.inc.php');
+
+// Commands for the developer
+
+$application = JelixCommands::setup();
+
+// here you can add commands to $application
+
+
+JelixCommands::launch($application);

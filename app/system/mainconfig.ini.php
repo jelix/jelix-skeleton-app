@@ -36,11 +36,7 @@ chmodFile=0664
 chmodDir=0775
 
 [modules]
-; modulename.access = x where x =
-; 0 if not used
-; 1 if accessible by other modules (other modules can use it, but it is not accessible directly through the web)
-; 2 if public (accessible through the web)
-main.access=2
+main.enabled=on
 
 [coordplugins]
 ;name = file_ini_name or 1
@@ -172,10 +168,6 @@ name=
 ;datepicker = default
 ; default captcha type, you can set it with "recaptcha" too
 ;captcha = simple
-
-
-[datepickers]
-;default = jelix/js/jforms/datepickers/default/init.js
 
 [recaptcha]
 ; see https://developers.google.com/recaptcha/docs/display to know the meaning

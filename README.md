@@ -35,23 +35,14 @@ cp var/config/profiles.ini.php.dist var/config/profiles.ini.php
 # an empty file to indicate local configuration values
 cp var/config/localconfig.ini.php.dist var/config/localconfig.ini.php
 
+# run the Jelix configurator
+php install/configure.php
+
 # run the Jelix installer
 php install/installer.php
 ```
 
-Create a link to the jelix-www of jelix. Jelix-www contains web resources for some
-Jelix components:
-
-```bash
-ln -s ../vendor/jelix/jelix/lib/jelix-www www/jelix
-```
-
-or copy the directory
-```bash
-cp -a ../vendor/jelix/jelix/lib/jelix-www www/jelix
-```
-
-Then you can launch the Php web server
+Then you can launch the PHP web server
 
 ```
 php -S localhost:8080 -t www 

@@ -1,25 +1,21 @@
 <?php
 /**
-* @package   jelix-skeleton-app
-* @subpackage main
-* @author    your name
+* @author
 * @copyright 
 * @link      
 * @license    MIT license. See LICENSE file
 */
 
 
-class mainModuleInstaller extends jInstallerModule2 {
+class mainModuleInstaller extends \Jelix\Installer\Module\Installer {
 
-    function installEntrypoint(jInstallerEntryPoint2 $entryPoint) {
+    function install(\Jelix\Installer\Module\API\InstallHelpers $helpers) {
 
-        //if ($this->firstDbExec())
-        //    $this->entryPoint->execSQLScript('sql/install');
+        //$helpers->database()->execSQLScript('sql/install');
 
-        /*if ($this->firstExec('acl2')) {
-            jAcl2DbManager::addSubject('my.subject', 'main~acl.my.subject', 'subject.group.id');
-            jAcl2DbManager::addRight('admins', 'my.subject'); // for admin group
-        }
+        /*
+        jAcl2DbManager::addSubject('my.subject', 'main~acl.my.subject', 'subject.group.id');
+        jAcl2DbManager::addRight('admins', 'my.subject'); // for admin group
         */
     }
 }
