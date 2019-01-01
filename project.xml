@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://jelix.org/ns/project/1.0">
-    <info id="jelix-skeleton-app@yourproject.undefined" name="jelix-skeleton-app" createdate="2018-08-04">
-        <version date="2018-08-04">0.1pre</version>
+    <info id="jelix-skeleton-app@yourproject.undefined" name="jelix-skeleton-app" createdate="2019-01-01">
+        <version date="2019-01-01">0.1pre</version>
         <label lang="en_US">jelix-skeleton-app</label>
         <description lang="en_US"></description>
         <license URL="">See LICENSE file</license>

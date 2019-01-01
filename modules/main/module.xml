@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module xmlns="http://jelix.org/ns/module/1.0">
-    <info id="main@yourproject.undefined" name="main" createdate="2018-08-04">
-        <version date="2018-08-04">0.1pre</version>
+    <info id="main@yourproject.undefined" name="main" createdate="2019-01-01">
+        <version date="2019-01-01">0.1pre</version>
         <label lang="en_US">main</label>
         <description lang="en_US" />
         <license URL="">MIT license. See LICENSE file</license>

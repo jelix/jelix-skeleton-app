@@ -2,7 +2,7 @@
 /**
  * @author   Laurent Jouanneau
  * @contributor
- * @copyright 2018 Laurent Jouanneau
+ * @copyright 2019 Laurent Jouanneau
  * @link     http://jelix.org
  * @licence  http://www.gnu.org/licenses/gpl.html GNU General Public Licence, see LICENCE file
  */
