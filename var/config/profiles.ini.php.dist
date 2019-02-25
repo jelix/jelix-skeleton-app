@@ -7,14 +7,14 @@ default = "jelix-skeleton-app"
 
 [jdb:jelix-skeleton-app]
 ; the driver name : mysql, pgsql, sqlite...
-driver="mysql"
+driver="sqlite3"
 
 ; For most of drivers:
-database="jelix"
-host= "localhost"
-user= "root"
-password=
-persistent= on
+database="myapp.sqlite3"
+;host= "localhost"
+;user= "root"
+;password=
+;persistent= on
 
 ; when you have charset issues, enable force_encoding so the connection will be
 ; made with the charset indicated in jelix config

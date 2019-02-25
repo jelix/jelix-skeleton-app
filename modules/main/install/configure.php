@@ -16,4 +16,9 @@ class mainModuleConfigurator extends \Jelix\Installer\Module\Configurator {
     function configure(\Jelix\Installer\Module\API\ConfigurationHelpers $helpers) {
 
     }
+
+    public function localConfigure(\Jelix\Installer\Module\API\LocalConfigurationHelpers $helpers)
+    {
+
+    }
 }

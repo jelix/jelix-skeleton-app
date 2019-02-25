@@ -36,7 +36,7 @@ cp var/config/profiles.ini.php.dist var/config/profiles.ini.php
 cp var/config/localconfig.ini.php.dist var/config/localconfig.ini.php
 
 # run the Jelix configurator
-php install/configure.php
+php install/configurator.php
 
 # run the Jelix installer
 php install/installer.php
@@ -69,5 +69,5 @@ and you should update the LICENSE file, the composer file and all comments heade
 ## installation without Composer
 
 Retrieve [the Jelix archive](http://jelix.org/articles/en/download/stable). You'll
-find a create-jelix-app.php script in it which creates from scratch the skeleton app.
+find a bin/create-jelix-app script in it which creates from scratch the skeleton app.
 See [the documentation](http://docs.jelix.org/en/manual-1.7/create-application).
